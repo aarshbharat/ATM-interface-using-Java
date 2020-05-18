@@ -30,9 +30,9 @@ public class Account {
         double balance = this.getBalance();
         //format the summary line, depending on the wheather the balance is negative
         if(balance>=0){
-            return String.format("%s : $%0.2f : %s",this.uuid,balance,this.name);
+            return String.format(this.uuid+" : $"+balance+" : "+this.name);
         }else{
-            return String.format("%s : $(%0.2f) : %s",this.uuid,balance,this.name);
+            return String.format(this.uuid+" : $"+balance+" : "+this.name);
         }
     }
     public double getBalance(){
